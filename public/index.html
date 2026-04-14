@@ -618,6 +618,17 @@
         .cta-buttons {
             animation-delay: 0.3s;
         }
+
+        /* Showcase section card hover effects */
+        .showcase-card {
+            transition: all 0.3s ease;
+        }
+
+        .showcase-card:hover {
+            background: rgba(30, 212, 212, 0.1) !important;
+            border-color: var(--teal) !important;
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body>
@@ -663,16 +674,47 @@
         </div>
     </section>
 
-    <!-- Image Showcase -->
-    <section class="showcase-section">
-        <div class="showcase-container">
-            <h2 style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Professional Medical Interpretation</h2>
-            <div class="showcase-grid">
-                <div class="showcase-image">
-                    <img src="/images/medical-interpretation.svg" alt="Global Medical Interpretation with Languages">
+    <!-- Shader Hero Showcase -->
+    <section style="position: relative; min-height: 100vh; overflow: hidden; background: linear-gradient(135deg, var(--slate-900) 0%, var(--navy-light) 100%);">
+        <div style="position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, rgba(30, 212, 212, 0.15) 0%, transparent 70%); pointer-events: none;"></div>
+        
+        <div style="position: relative; z-index: 10; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 2rem;">
+            <div style="max-width: 5xl; width: 100%; text-align: center;">
+                <h2 style="color: var(--white); font-size: 2.5rem; font-weight: 800; margin-bottom: 3rem; line-height: 1.3;">
+                    Professional Medical Interpretation
+                </h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
+                    <!-- Healthcare Interpretation Card -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(30, 212, 212, 0.2); border-radius: 1rem; padding: 2rem; backdrop-filter: blur(10px); transition: all 0.3s;">
+                        <h3 style="color: var(--teal); font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Healthcare Interpretation</h3>
+                        <p style="color: var(--gray-400); font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                            Certified medical interpreters fluent in 50+ languages, available 24/7 for hospitals, clinics, and urgent care facilities.
+                        </p>
+                        <ul style="color: var(--gray-400); font-size: 0.9rem; text-align: left; list-style: none;">
+                            <li style="margin-bottom: 0.5rem;">✓ HIPAA compliant & secure</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Video, phone, in-person options</li>
+                            <li>✓ Medical terminology expertise</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Multilingual Support Card -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(30, 212, 212, 0.2); border-radius: 1rem; padding: 2rem; backdrop-filter: blur(10px); transition: all 0.3s;">
+                        <h3 style="color: var(--teal); font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Multilingual Support</h3>
+                        <p style="color: var(--gray-400); font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                            Spanish, Mandarin, Arabic, Vietnamese, Tagalog, and 45+ other languages with native-speaking interpreters.
+                        </p>
+                        <ul style="color: var(--gray-400); font-size: 0.9rem; text-align: left; list-style: none;">
+                            <li style="margin-bottom: 0.5rem;">✓ Native speaker accuracy</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Cultural sensitivity trained</li>
+                            <li>✓ Instant availability</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="showcase-image">
-                    <img src="/images/healthcare-providers.svg" alt="Healthcare Providers and Interpreters">
+                
+                <div class="cta-buttons" style="margin-top: 2rem;">
+                    <button class="btn btn-primary">Request Interpreter Now</button>
+                    <button class="btn btn-secondary">Learn More</button>
                 </div>
             </div>
         </div>
