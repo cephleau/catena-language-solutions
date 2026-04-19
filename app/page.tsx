@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { CleanHero } from '@/components/ui/clean-hero';
+import { CatenaCTASection } from '@/components/ui/catena-cta-section';
 import { Phone, MessageSquare, Calendar, CheckCircle, Globe, Lock, Zap } from 'lucide-react';
 
 const navLinks = [
@@ -213,26 +214,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section id="contact" className="py-24 px-4 md:px-8 bg-gradient-to-b from-white to-gray-50 border-t border-gray-200">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Ready to Get Started?</h2>
-          <p className="text-gray-600 text-lg mb-10">
-            Join hundreds of healthcare providers already using Catena for reliable Spanish interpretation.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 text-white font-bold py-4 px-10 rounded-lg text-lg transition-all shadow-lg hover:shadow-xl">
-              Request an Interpreter
-            </button>
-            <button className="bg-white border-2 border-teal-500 text-teal-600 font-bold py-4 px-10 rounded-lg text-lg transition-all hover:bg-teal-50">
-              Schedule a Demo
-            </button>
-          </div>
-        </div>
+      {/* CTA Section - Premium animated final conversion */}
+      <section id="contact" className="border-t border-gray-200">
+        <CatenaCTASection />
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 border-t border-gray-800 py-12 px-4 md:px-8">
+      <footer className="bg-gray-900 border-t border-gray-800 py-12 px-4 md:px-8 mt-0">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div>
